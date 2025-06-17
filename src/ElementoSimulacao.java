@@ -10,3 +10,5 @@ public abstract class ElementoSimulacao {
     public Color getCorRepresentacao(){return null;}; //retorna a cor do elemeto
     public abstract void atualizarEstado(); //atualiza o estado do elemeto na simulacao
 }
+
+

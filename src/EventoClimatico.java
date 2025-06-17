@@ -12,6 +12,7 @@ public class EventoClimatico extends ElementoSimulacao{
         duracao --;
     }
 
+
     @Override
     public Color getCorRepresentacao(){
         return Color.BLUE;

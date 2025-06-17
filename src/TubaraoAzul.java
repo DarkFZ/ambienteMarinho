@@ -1,10 +1,30 @@
+import java.awt.*;
+
 public class TubaraoAzul extends OrganismoMarinho implements Consumidor{
-    public TubaraoAzul(String nome, int populacao, float taxaReproducao) {
-        super(nome, populacao, taxaReproducao);
+
+    private int consumoPorCiclo;
+
+
+    public TubaraoAzul( int populacao, float taxaReproducao, int consumoPorCiclo) {
+
+        super("Tubarao Azul", populacao, taxaReproducao);
+        this.consumoPorCiclo = consumoPorCiclo;
+
     }
 
     @Override
-    public void consumir(Object alimento) {
+    public int consumir(Object alimento) {
 
+        return 0;
+    }
+
+    @Override
+    public int consumir(PeixeAgulha alimento) {
+        alimento.serPredado(consumoPorCiclo);
+        return 0;
+    }
+
+    public Color getCorRepresentacao(){
+        return Color.blue;
     }
 }

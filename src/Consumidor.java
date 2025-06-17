@@ -1,3 +1,6 @@
 public interface Consumidor <T>{
-    void consumir(T alimento);
+    public int consumir(T alimento);
+
+    int consumir(PeixeAgulha alimento);
 }
+
