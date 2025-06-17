@@ -8,7 +8,7 @@ public class AveMarinha extends OrganismoMarinho implements Consumidor{
 
     public int consumir(Plancton alimento){
 
-        return quantidade;
+        return 0;
     }
 
     @Override
