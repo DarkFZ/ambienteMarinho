@@ -9,6 +9,7 @@ public class PeixeAgulha extends OrganismoMarinho implements Predavel {
         this.consumoPorCiclo = consumoPorCiclo;
     }
 
+
     public void consumir(Plancton alimento) {
         int totalConsumir = getPopulacao() * consumoPorCiclo;
         alimento.serPredado(totalConsumir);
