@@ -2,10 +2,10 @@ import java.awt.*;
 
 public class PeixeAgulha extends OrganismoMarinho implements Predavel {
 
-    private int consumoPorCiclo;
+    final int consumoPorCiclo;
 
-    public PeixeAgulha(String nome, int populacao, float taxaReproducao, int consumoPorCiclo) {
-        super(nome, populacao, taxaReproducao);
+    public PeixeAgulha( int populacao, float taxaReproducao, int consumoPorCiclo) {
+        super("Peixe Agulha", populacao, taxaReproducao);
         this.consumoPorCiclo = consumoPorCiclo;
     }
 
