@@ -14,6 +14,15 @@ public class AmbienteMarinho {
     this.recifeDeCoral = recifeDeCoral;
     }
 
+     public void simularCiclo(){
+        getAveMarinha().atualizarEstado();
+        getPlancton().atualizarEstado();
+        getPeixeAgulha().atualizarEstado();
+        getTubarao().atualizarEstado();
+        getRecife().atualizarEstado();
+
+        exibirEstado();
+    }
     private void exibirEstado(){
 
         System.out.println("\nO ambiente marinho tem :");
@@ -22,7 +31,7 @@ public class AmbienteMarinho {
         System.out.println("Tubarao Azul = " + getTubarao().getPopulacao());
         System.out.println("Peixe Agulha = " + getPeixeAgulha().getPopulacao());
 
-        if(getRecife().estaDegradado()){
+        if(!getRecife().estaDegradado()){
             System.out.println("Recife de Coral esta degradado!");
         }else{
             System.out.println("Recife esta BOM!\n");

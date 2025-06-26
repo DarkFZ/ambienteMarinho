@@ -21,7 +21,7 @@ public class TubaraoAzul extends OrganismoMarinho implements Consumidor{
     @Override
     public int consumir(PeixeAgulha alimento) {
         alimento.serPredado(consumoPorCiclo);
-        return 0;
+        return alimento.getPopulacao();
     }
 
     public Color getCorRepresentacao(){
