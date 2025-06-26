@@ -4,8 +4,8 @@ public class PeixeAgulha extends OrganismoMarinho implements Predavel {
 
     private int consumoPorCiclo;
 
-    public PeixeAgulha( int populacao, float taxaReproducao, int consumoPorCiclo) {
-        super("Peixe Agulha", populacao, taxaReproducao);
+    public PeixeAgulha(String nome, int populacao, float taxaReproducao, int consumoPorCiclo) {
+        super(nome, populacao, taxaReproducao);
         this.consumoPorCiclo = consumoPorCiclo;
     }
 
